@@ -1,0 +1,90 @@
+function sendWhatsApp() {
+
+const name = document.getElementById("name").value;
+const phone = document.getElementById("phone").value;
+const pickup = document.getElementById("pickup").value;
+const destination = document.getElementById("destination").value;
+const service = document.getElementById("service").value;
+const property = document.getElementById("property").value;
+const date = document.getElementById("date").value;
+const time = document.getElementById("time").value;
+const details = document.getElementById("details").value;
+
+const message =
+    "NEW SERVICE REQUEST" +
+    "\n\n" +
+    "Riyadh Home Shifting & Home Cleaning Company" +
+    "\n\n" +
+    "Name: " + name +
+    "\nPhone: " + phone +
+    "\nPickup: " + pickup +
+    "\nDestination: " + destination +
+    "\nService: " + service +
+    "\nProperty: " + property +
+    "\nDate: " + date +
+    "\nTime: " + time +
+    "\nDetails: " + details;
+
+const whatsappURL =
+    "https://wa.me/966559491031?text=" +
+    encodeURIComponent(message);
+
+window.open(whatsappURL, "_blank");
+
+}
+
+/* Set minimum booking date to today */
+
+const dateInput = document.getElementById("date");
+
+if (dateInput) {
+const today = new Date().toISOString().split("T")[0];
+dateInput.min = today;
+}
+
+}
+
+function toggleLanguage() {
+
+const currentLanguage = document.documentElement.lang;
+
+if (currentLanguage === "en") {
+
+    document.documentElement.lang = "ar";
+    document.documentElement.dir = "rtl";
+
+    document.querySelector(".language-btn").innerText = "English";
+
+    document.querySelector(".hero h1").innerHTML =
+        "انقل منزلك<br><span>بكل ثقة.</span>";
+
+    document.querySelector(".hero p").innerText =
+        "خدمات نقل المنازل والتغليف ونقل الأثاث وتنظيف المنازل في جميع أنحاء الرياض.";
+
+    document.querySelector(".section-heading h2").innerText =
+        "خدمات النقل والتنظيف المتكاملة";
+
+    document.querySelector(".section-heading p").innerText =
+        "كل ما تحتاجه لنقل منزلك وتنظيفه بسهولة.";
+
+} else {
+
+    document.documentElement.lang = "en";
+    document.documentElement.dir = "ltr";
+
+    document.querySelector(".language-btn").innerText = "عربي";
+
+    document.querySelector(".hero h1").innerHTML =
+        "Move Your Home<br><span>With Confidence.</span>";
+
+    document.querySelector(".hero p").innerText =
+        "Professional home shifting, packing, furniture moving and home cleaning services across Riyadh.";
+
+    document.querySelector(".section-heading h2").innerText =
+        "Complete Moving & Cleaning Services";
+
+    document.querySelector(".section-heading p").innerText =
+        "Everything you need for a smooth move and a clean home.";
+}
+
+}
