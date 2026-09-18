@@ -13,15 +13,16 @@
     <div>📞 055 949 1031</div>
 </div><!-- NAVIGATION --><header><a href="#home" class="logo">
     <span>RH</span>
-    Riyadh Moving
-</a>
-
+    <span>Riyadh Home Shifting & Home Cleaning Company</span>
 <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#packages">Packages</a>
     <a href="#about">About</a>
     <a href="#quote">Get Quote</a>
+    <button onclick="toggleLanguage()" class="language-btn">
+        عربي
+    </button>
 </nav>
 
 <a class="nav-button"
@@ -171,7 +172,7 @@
 
 <div class="package-grid">
 
-    <div class="package">
+    < class="package">
 
         <h3>Basic Move</h3>
 
@@ -186,22 +187,140 @@
             <li>✓ Basic furniture handling</li>
         </ul>
 
-        <a href="#quote">Get Quote</a>
+<form onsubmit="sendWhatsApp(); return false;"><div class="form-title">
+    <h3>Tell Us About Your Service</h3>
+    <p>We'll receive your request directly on WhatsApp.</p>
+</div>
+
+<div class="form-row">
+
+    <div>
+        <label>Your Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required>
+    </div>
+
+    <div>
+        <label>Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="05XXXXXXXX"
+            required>
+    </div>
+
+</div>
+
+
+<div class="form-row">
+
+    <div>
+        <label>Pickup Location</label>
+        <input
+            type="text"
+            id="pickup"
+            placeholder="Where are you moving from?"
+            required>
+    </div>
+
+    <div>
+        <label>Destination</label>
+        <input
+            type="text"
+            id="destination"
+            placeholder="Where are you moving to?"
+            required>
+    </div>
+
+</div>
+
+
+<div class="form-row">
+
+    <div>
+        <label>Service</label>
+
+        <select id="service" required>
+
+            <option value="">Choose a service</option>
+            <option>Home Shifting</option>
+            <option>Office Shifting</option>
+            <option>Packing & Unpacking</option>
+            <option>Furniture Moving</option>
+            <option>Home Cleaning</option>
+            <option>Moving + Cleaning</option>
+
+        </select>
+    </div>
+
+
+    <div>
+        <label>Property Type</label>
+
+        <select id="property" required>
+
+            <option value="">Choose property</option>
+            <option>Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4+ Bedrooms</option>
+            <option>Villa</option>
+            <option>Office</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+
+<div class="form-row">
+
+    <div>
+        <label>Preferred Date</label>
+
+        <input
+            type="date"
+            id="date"
+            required>
 
     </div>
 
 
-    <div class="package featured">
+    <div>
+        <label>Preferred Time</label>
 
-        <div class="popular">
-            POPULAR
-        </div>
+        <select id="time">
 
-        <h3>Complete Move</h3>
+            <option value="">Select time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
 
-        <div class="price">
-            From <strong>SAR 399</strong>
-        </div>
+        </select>
+
+    </div>
+
+</div>
+
+
+<label>Additional Details</label>
+
+<textarea
+    id="details"
+    placeholder="For example: elevator available, large furniture, number of boxes..."
+    rows="5"></textarea>
+
+
+<button type="submit">
+    💬 Send Booking Request on WhatsApp
+</button>
+
+</form>
 
         <ul>
             <li>✓ Packing</li>
@@ -213,7 +332,7 @@
 
         <a href="#quote">Get Quote</a>
 
-    </div>
+    </>
 
 
     <div class="package">
@@ -235,7 +354,7 @@
 
     </div>
 
-</div>
+</>
 
 </section><!-- WHY US --><section id="about" class="section why"><div class="why-text">
 
@@ -366,8 +485,149 @@
     <button type="submit">
         Send Request on WhatsApp →
     </button>
+  <!-- PHOTO GALLERY --><section class="gallery-section"><div class="section-heading">
 
-</form>
+    <span>OUR WORK</span>
+
+    <h2>Professional Moving & Cleaning</h2>
+
+    <p>
+        Safe moving, careful packing and quality cleaning services.
+    </p>
+
+</div>
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img
+            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=900&q=85"
+            alt="Home furniture">
+        <div>
+            <h3>Home Moving</h3>
+            <p>Safe furniture transportation</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img
+            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
+            alt="Clean home">
+        <div>
+            <h3>Home Cleaning</h3>
+            <p>Professional cleaning service</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img
+            src="https://images.unsplash.com/photo-1586528116493-da8b7c6b6f2f?auto=format&fit=crop&w=900&q=85"
+            alt="Moving boxes">
+        <div>
+            <h3>Packing Service</h3>
+            <p>Careful packing and protection</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+            alt="Clean interior">
+        <div>
+            <h3>Deep Cleaning</h3>
+            <p>Fresh and clean spaces</p>
+        </div>
+    </div>
+
+</div>
+
+</section><!-- CUSTOMER REVIEWS --><section class="reviews"><div class="section-heading">
+
+    <span>CUSTOMER FEEDBACK</span>
+
+    <h2>What Our Customers Say</h2>
+
+</div>
+
+<div class="review-grid">
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            "Very careful with the furniture and the moving process
+            was well organized."
+        </p>
+        <strong>— Customer Review</strong>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            "The cleaning service was convenient and the team was
+            professional."
+        </p>
+        <strong>— Customer Review</strong>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+            "Good communication and easy booking through WhatsApp."
+        </p>
+        <strong>— Customer Review</strong>
+    </div>
+
+</div>
+
+</section>
+
+</form><!-- SERVICE AREA --><section class="location-section"><div class="location-content">
+
+    <div class="location-text">
+
+        <span>SERVICE AREA</span>
+
+        <h2>Home Shifting Across Riyadh</h2>
+
+        <p>
+            We provide home shifting, furniture moving, packing
+            and home cleaning services across Riyadh.
+        </p>
+
+        <div class="areas">
+
+            <div>✓ Al Olaya</div>
+            <div>✓ Al Malaz</div>
+            <div>✓ Al Nakheel</div>
+            <div>✓ Al Rawdah</div>
+            <div>✓ Al Nuzha</div>
+            <div>✓ Al Yasmin</div>
+            <div>✓ Al Munsiyah</div>
+            <div>✓ And nearby areas</div>
+
+        </div>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Riyadh,Saudi+Arabia"
+            target="_blank"
+            class="primary-btn">
+            📍 Open Riyadh on Google Maps
+        </a>
+
+    </div>
+
+    <div class="map-box">
+
+        <iframe
+            src="https://www.google.com/maps?q=Riyadh,Saudi%20Arabia&output=embed"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</div>
+
+</section>
 
 </section><!-- CONTACT --><section class="contact"><h2>Ready to Move?</h2>
 
