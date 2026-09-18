@@ -826,3 +826,22 @@ form button:hover {
 transform: translateY(-2px);
 opacity: 0.92;
 }
+.logo span {
+    max-width: 260px;
+    line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+    .logo span {
+        font-size: 18px;
+        max-width: 210px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-icon {
+        flex-shrink: 0;
+    }
+}
