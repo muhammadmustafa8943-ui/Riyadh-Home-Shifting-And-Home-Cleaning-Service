@@ -863,3 +863,27 @@ opacity: 0.92;
     background: #1677ff;
     color: #ffffff;
 }
+/* Arabic language */
+body.arabic {
+    direction: rtl;
+    text-align: right;
+}
+
+body.arabic .hero-content,
+body.arabic .location-content,
+body.arabic .quote-content,
+body.arabic .contact-content {
+    text-align: right;
+}
+
+body.arabic .areas {
+    direction: rtl;
+}
+
+body.arabic .language-btn {
+    font-family: Arial, sans-serif;
+}
+
+body.arabic .logo {
+    flex-direction: row-reverse;
+}
