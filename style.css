@@ -845,3 +845,21 @@ opacity: 0.92;
         flex-shrink: 0;
     }
 }
+.call-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 16px 30px;
+    background: #ffffff;
+    color: #111827;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #1677ff;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background: #1677ff;
+    color: #ffffff;
+}
